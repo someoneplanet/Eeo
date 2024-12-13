@@ -19,7 +19,7 @@ proot-distro login debian <<EOF
     apt update && apt upgrade -y
 
     echo "Installing software and tools..."
-    apt install -y curl wget git nano vim unzip zip htop screen tmux neofetch lynx w3m firefox-esr chromium xorg x11-utils x11-apps xfce4 xfce4-goodies openssh-client openssh-server net-tools nmap traceroute build-essential gcc g++ make python3 python3-pip ffmpeg vlc gimp rsync rar unrar p7zip-full tree synaptic apt-file ncdu gparted glances tigervnc-standalone-server tigervnc-viewer xrdp libreoffice evince
+    apt install -y curl wget git nano vim unzip zip htop screen tmux neofetch lynx w3m firefox-esr chromium xorg x11-utils x11-apps xfce4 xfce4-goodies openssh-client openssh-server net-tools nmap traceroute build-essential gcc g++ make python3 python3-pip ffmpeg vlc gimp rsync rar unrar p7zip-full tree synaptic apt-file ncdu gparted glances tigervnc xrdp libreoffice evince
 
     echo "Cleaning up unnecessary packages..."
     apt autoremove -y && apt autoclean -y
@@ -33,3 +33,4 @@ EOF
 
 # Completion message
 echo "Setup complete! Log into Debian with 'proot-distro login debian' and start the VNC server with 'vncserver :1'. Connect to the server using 'localhost:1'."
+ 
